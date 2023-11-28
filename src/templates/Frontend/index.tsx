@@ -1,3 +1,4 @@
+import Header from '../../organisms/Header';
 import * as S from './styles'
 
 
@@ -8,7 +9,9 @@ type FrontendProps = {
 
 
 const Frontend = ({ children }: FrontendProps) =>  {
-    return <S.Container>Teste Frontend {children}</S.Container>;
+    return <S.Container>
+        <Header></Header>
+        </S.Container>;
 
 
 };
