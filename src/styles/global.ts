@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+import Ell1 from "../assets/Ellipse1.png";
+import Ell2 from "../assets/Ellipse2.png";
+
 const globalStyle = createGlobalStyle`
     * {
         padding: 0;
@@ -12,6 +15,8 @@ const globalStyle = createGlobalStyle`
     }
 
     body {
+        background: url(${Ell2})no-repeat 1010px,  url(${Ell1}) no-repeat 931px;
+        background-size: cover;
         background-color: #F8FDFF;
         font-family: 'Poppins', sans-serif;
     }
